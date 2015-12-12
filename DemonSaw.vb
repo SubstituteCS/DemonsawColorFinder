@@ -69,9 +69,9 @@ Public Class DemonSaw
     Public Shared Function GetNameHash(name As String) As Byte
         Dim hash As Int32 = 0
         Dim data As Byte() = System.Text.Encoding.Unicode.GetBytes(name)
-        Dim bdata(data.Length) As Short
+        Dim bdata(data.Length) As UShort
         For i As Int32 = 0 To data.Length - 1 Step 2
-            bdata(i) = BitConverter.ToInt16(data, i)
+            bdata(i) = BitConverter.ToUInt16(data, i)
         Next
         For Each item In bdata
             If item >= 160 And item <= 8210 Then
@@ -79,10 +79,10 @@ Public Class DemonSaw
             Else
                 hash += item
             End If
-            'Debug.WriteLine(item & " added")
+            Debug.WriteLine(item & " added")
         Next
         hash = hash Mod s_colors.Length
-        'Debug.WriteLine("hash found as " & hash)
+        Debug.WriteLine("hash found as " & hash)
         Return CByte(hash)
     End Function
 
