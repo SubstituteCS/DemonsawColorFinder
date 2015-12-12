@@ -20,4 +20,8 @@
         Main.c_index = colorslistview.SelectedItems(0).Index
         Me.Close()
     End Sub
+
+    Private Sub PickColor_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        colorslistview.Clear()
+    End Sub
 End Class

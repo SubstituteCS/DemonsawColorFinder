@@ -68,17 +68,30 @@ Public Class DemonSaw
 
     Public Shared Function GetNameHash(name As String) As Byte
         Dim hash As Int32 = 0
-        For Each item In name
-            hash += Asc(item)
+        Dim data As Byte() = System.Text.Encoding.Unicode.GetBytes(name)
+        Dim bdata(data.Length) As Short
+        For i As Int32 = 0 To data.Length - 1 Step 2
+            bdata(i) = BitConverter.ToInt16(data, i)
+        Next
+        For Each item In bdata
+            If item >= 160 Then
+                hash += item + 1
+            Else
+                hash += item
+            End If
+            Debug.WriteLine(item & " added")
         Next
         hash = hash Mod s_colors.Length
+        Debug.WriteLine("hash found as " & hash)
         Return CByte(hash)
     End Function
 
     Public Shared Function GetDistance(hash As Byte, desired As Byte) As Byte
         If desired > hash Then
+            Debug.WriteLine("Found Offset, D > H")
             Return desired - hash
         Else
+            Debug.WriteLine("Found Offset, D < H")
             Return CByte(s_colors.Length + desired - hash) 'same as above, but to loop back around since there are no negative value characters
         End If
     End Function
