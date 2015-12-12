@@ -1,0 +1,24 @@
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.exe.config
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.exe
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.pdb
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.xml
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.vbprojResolveAssemblyReference.cache
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.Form1.resources
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.Resources.resources
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.vbproj.GenerateResource.Cache
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.exe
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.xml
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.pdb
+C:\Users\Riley\AppData\Local\Temporary Projects\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.ColorChooser.resources
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.exe.config
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.exe
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.pdb
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\bin\Debug\DemonSawColorFinder.xml
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.PickColor.resources
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.Main.resources
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.Resources.resources
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.vbproj.GenerateResource.Cache
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.exe
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.xml
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.pdb
+C:\Users\Riley\Documents\Visual Studio 2015\Projects\DemonSawColorFinder\DemonSawColorFinder\obj\Debug\DemonSawColorFinder.vbprojResolveAssemblyReference.cache
