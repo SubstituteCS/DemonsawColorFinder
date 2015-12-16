@@ -2,7 +2,6 @@
     Friend c_index As Int32 = -1
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         previewpicturebox.BackColor = DemonSaw.default_chat
-        previewpicturebox.BackColor = DemonSaw.s_colors(DemonSaw.GetNameHash("💩"))
     End Sub
 
     Private Sub previewpicturebox_Click(sender As Object, e As EventArgs) Handles previewpicturebox.Click
@@ -25,7 +24,7 @@
     Private Function GenerateNewName() As String
         Dim offset As Byte = DemonSaw.GetDistance(DemonSaw.GetNameHash(usernametextbox.Text), c_index)
         Dim data As New List(Of Byte)
-        data.AddRange(System.Text.Encoding.UTF8.GetBytes(usernametextbox.Text))
+        data.AddRange(System.Text.Encoding.UTF32.GetBytes(usernametextbox.Text))
         While offset <> 0
             For c As Int32 = 31 To 1 Step -1
                 If c >= 9 And c <= 13 Then
@@ -33,14 +32,13 @@
                 End If
                 If c > offset Then
                     Continue For
-                Else
-                    offset -= c
-                    data.Add(c)
-                    'Debug.WriteLine("Found offset ctrlchar: " & c & ", offset = " & offset)
-                    Exit For
                 End If
+                offset -= c
+                data.AddRange(BitConverter.GetBytes(c))
+                Debug.WriteLine("Found offset ctrlchar: " & c & ", offset = " & offset)
+                Exit For
             Next
         End While
-        Return System.Text.Encoding.UTF8.GetString(data.ToArray)
+        Return System.Text.Encoding.UTF32.GetString(data.ToArray)
     End Function
 End Class

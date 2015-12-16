@@ -67,21 +67,21 @@ Public Class DemonSaw
         Color.FromArgb(&HFF, &HE8, &H5E, &HBE)}
 
     Public Shared Function GetNameHash(name As String) As Byte
-        Dim hash As Int32 = 0
-        Dim data As Byte() = System.Text.Encoding.Unicode.GetBytes(name)
-        Dim bdata(data.Length) As UShort
-        For i As Int32 = 0 To data.Length - 1 Step 2
-            bdata(i) = BitConverter.ToUInt16(data, i)
+        Dim hash As UInt32 = 0
+        Dim data As Byte() = System.Text.Encoding.UTF32.GetBytes(name)
+        Dim bdata(data.Length) As UInt32
+        For i As Int32 = 0 To data.Length - 1 Step 4
+            bdata(i) = BitConverter.ToUInt32(data, i)
         Next
-        For Each item In bdata
+        For Each item As UInt32 In bdata
             If item >= 160 And item <= 8210 Then
-                hash += item + 1
+                hash += CUInt(item + 1)
             Else
                 hash += item
             End If
             Debug.WriteLine(item & " added")
         Next
-        hash = hash Mod s_colors.Length
+        hash = CUInt(hash Mod s_colors.Length)
         Debug.WriteLine("hash found as " & hash)
         Return CByte(hash)
     End Function
