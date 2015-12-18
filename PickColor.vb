@@ -17,8 +17,12 @@
 
     Private Sub confirmbutton_Click(sender As Object, e As EventArgs) Handles confirmbutton.Click
         Main.previewpicturebox.BackColor = previewcolorpicturebox.BackColor
-        Main.c_index = colorslistview.SelectedItems(0).Index
-        Me.Close()
+        If colorslistview.SelectedItems.Count = 1 Then
+            Main.c_index = colorslistview.SelectedItems(0).Index
+            Me.Close()
+        Else
+            MessageBox.Show("Please Select A Color", "Error", MessageBoxButtons.OK)
+        End If
     End Sub
 
     Private Sub PickColor_Closed(sender As Object, e As EventArgs) Handles Me.Closed

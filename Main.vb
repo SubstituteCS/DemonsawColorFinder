@@ -2,6 +2,7 @@
     Friend c_index As Int32 = -1
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         previewpicturebox.BackColor = DemonSaw.default_chat
+        Clipboard.SetText(System.Text.Encoding.UTF32.GetString({255, 255, 255, 255}))
     End Sub
 
     Private Sub previewpicturebox_Click(sender As Object, e As EventArgs) Handles previewpicturebox.Click
